@@ -15,11 +15,11 @@
     <div id="output"></div>
 
     <script>
-      const clientID = "SeJnSDVwzLTwgf7vjk32TKjBzGu122Ug";
+      const clientID = "6Cr9EMZo5erFWCmjhDPuWm2F6h6d0U33";
       const redirectURI = window.location.href;
 
       function handleLogin() {
-        const authorizeURL = `https://auth.atlassian.com/authorize?audience=api.atlassian.com&client_id=${clientID}&redirect_uri=${redirectURI}&scope=read:me+read:jira-user&response_type=code&prompt=consent`;
+        const authorizeURL = `https://auth.atlassian.com/authorize?audience=api.atlassian.com&client_id=${clientID}&redirect_uri=https://nikhilkaushikop.github.io/Atlassian/callback&scope=read:me+read:jira-user&response_type=code&prompt=consent`;
         window.location.href = authorizeURL;
       }
 
